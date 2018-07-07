@@ -1,4 +1,3 @@
-/*APP SETUP*/
 var express = require("express");
 var app = express();
 var request = require("request");
@@ -6,7 +5,6 @@ var request = require("request");
 app.use(express.static("public"));
 app.set("view engine","ejs");
 
-/*ROUTES*/
 app.get("/",function(req,res){
     res.render("search");
 });
@@ -21,7 +19,6 @@ app.get("/results",function(req,res){
    });
 });
 
-/*SERVER*/
 app.listen(process.env.PORT,process.env.IP,function(){
     console.log("Movie App has started...");
 });
