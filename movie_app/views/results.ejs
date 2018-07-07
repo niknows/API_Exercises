@@ -1,9 +1,13 @@
-<html>
-    <head></head>
-    <body>
-    <% parsed.Search.forEach(function(item){ %>
-     <h2><%= item.Title %></h2>
-     <img src="<%= item.Poster %>">
-    <% }); %>
+      <% include partials/header %>
+      
+      <% parsed.Search.forEach(function(item){ %>
+       <div class="movie-item">
+       <h2><%= item.Title %> - <%= item.Year %></h2>
+       <img src="<%= item.Poster %>">
+       </div>
+      <% }); %>
+     
     <a href="/">Back</a>
     </body>
+    
+    <% include partials/footer %>
