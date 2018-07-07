@@ -6,6 +6,7 @@ var request = require("request");
 app.use(express.static("public"));
 app.set("view engine","ejs");
 
+/*ROUTES*/
 app.get("/",function(req,res){
     res.render("search");
 });
