@@ -5,8 +5,29 @@ body {
     font-size: 35px;
     background-color: #1e272e;
     color: #ffdd59;
+    padding: 15px;
 }
 
+/*GENERIC*/
+input[type='submit'], .return{
+    font-size: 0.8em;
+    padding: 15px;
+    border: none;
+    background-color: #FD7272;
+    color: #fff;
+    
+}
+
+/*RESULTS PAGE*/
+
+.container {
+    display:flex;
+    height: 80vh;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/*content-box*/
 div > img {
     box-sizing: border-box;
     width: 30%;
@@ -18,28 +39,20 @@ div {
     padding: 30px;
 }
 
-.container {
-    display:flex;
-    height: 80vh;
-    flex-direction: column;
-    justify-content: center;
+/*back button*/
+.return{
+   text-decoration: none;
 }
 
+/*SEARCH PAGE*/
+/*form field*/
 input[type='text']{
     padding: 15px;
     font-size: 0.8em;
     text-align: center;
 }
-
-input[type='submit']{
-    font-size: 0.8em;
-    padding: 15px;
-    border: none;
-    background-color: #FD7272;
-    color: #fff;
-    
-}
-
+/*form button*/
 ::placeholder{
     color: #9AECDB;
 }
+
