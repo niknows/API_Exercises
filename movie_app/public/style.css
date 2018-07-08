@@ -22,3 +22,15 @@ div {
     flex-direction: column;
     justify-content: center;
 }
+
+input[type='text']{
+    padding: 15px;
+    font-size: 0.8em;
+    text-align: center;
+}
+
+input[type='submit']{
+    font-size: 0.8em;
+    padding: 15px;
+    border: none;
+}
