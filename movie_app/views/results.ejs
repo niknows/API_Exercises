@@ -3,9 +3,14 @@
       <% parsed.Search.forEach(function(item){ %>
        <div class="movie-item">
        <h2><%= item.Title %> - <%= item.Year %></h2>
+       <% if(item.Poster == "N/A"){ %>
+       <p class="error">No image available...</p>
+       <% } else{ %>
        <img src="<%= item.Poster %>">
+       <% } %>
        </div>
       <% }); %>
+      
      
     <a  class="return" href="/">Back</a>
     </body>
