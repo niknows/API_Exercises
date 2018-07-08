@@ -14,9 +14,17 @@ app.get("/results",function(req,res){
    request(url,function(error,response,body){
        if(!error && response.statusCode == 200){
           var parsed = JSON.parse(body);
+          if(!parsed.Search){
+              res.send("Error, movie not found.");
+          } else
+          {
           res.render("results",{parsed: parsed});
+          }
        }
    });
+});
+app.get("*",function(req,res){
+    res.send("Essa página não existe.");
 });
 
 app.listen(process.env.PORT,process.env.IP,function(){
