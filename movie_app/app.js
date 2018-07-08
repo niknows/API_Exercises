@@ -15,7 +15,7 @@ app.get("/results",function(req,res){
        if(!error && response.statusCode == 200){
           var parsed = JSON.parse(body);
           if(!parsed.Search){
-              res.send("Error, movie not found.");
+              res.render("error");
           } else
           {
           res.render("results",{parsed: parsed});
